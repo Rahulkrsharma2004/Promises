@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>McDonald's Virtual Order System</h1>
+        
+        <div class="menu">
+            <h2>Menu</h2>
+            <div class="food-item">
+                <img src="https://www.foodandwine.com/thmb/pwFie7NRkq4SXMDJU6QKnUKlaoI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Ultimate-Veggie-Burgers-FT-Recipe-0821-5d7532c53a924a7298d2175cf1d4219f.jpg" alt="Burger" class="food-image" style="height: 70px; width: 80px;">
+                <input type="checkbox" id="burger" name="burger">
+                <label for="burger">Burger</label>
+            </div>
+            
+            <div class="food-item">
+                <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-kfc-fries-png-image_4633713.jpg" alt="Fries" class="food-image" style="height: 80px; width: 80px;">
+                <input type="checkbox" id="fries" name="fries">
+                <label for="fries">Fries</label>
+            </div>
+
+            <div class="food-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/338/744/non_2x/ai-generative-coca-cola-company-fizzy-drinks-diet-coke-pepsi-free-png.png" alt="Coke" class="food-image" style="height: 90px; width: 80px;">
+                <input type="checkbox" id="coke" name="coke">
+                <label for="coke">Coke</label>
+            </div>
+
+            <!-- ... Add more items as required ... -->
+
+            <button id="order-btn">Order Food</button>
+        </div>
+
+        <div class="order-completed" id="hidden">
+            <h2>Order Completed!</h2>
+            <p>Your order number is: <span id="order-number">12345</span></p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
