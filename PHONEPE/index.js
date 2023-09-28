@@ -29,7 +29,9 @@ paybtn.addEventListener('click',function(){
     
             }).then(res => {
                 pending.style.display = `none`
+                success.innerText = input.value;
                 document.getElementById("hidden1").style.display = 'block'
+                // input.value = success.innerHTML
                 console.log(res)
 
             }).catch(res => {
@@ -46,10 +48,4 @@ paybtn.addEventListener('click',function(){
 
     }
         
-        // if(done == 'none' && reject == 'none'){
-        //     pending.style.display = `block`
-        // }
-        // else if(done == 'block' || reject == 'block'){
-        //     pending.style.display = `none`
-        // }
 })

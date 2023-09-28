@@ -10,9 +10,10 @@ h1{
 .img1{
     width: 30%;
     height: 200px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 10px;
-    
+    border-TOP-left-radius:15px;
+    border-TOP-right-radius:15px;
 
 }
 #img{
@@ -22,7 +23,7 @@ h1{
 .img2{
     width: 30%;
     height: 410px;
-    border-radius: 5px;
+    
     margin-top: 3px;
    
 }
@@ -55,9 +56,9 @@ h1{
    width: 50px;
    margin-left: 5px;
 }
-input::placeholder{
+/* input::placeholder{
   color: rgb(119, 15, 184);
-}
+} */
 .inpbtn{
     display: flex;
     justify-content: center;
@@ -66,13 +67,61 @@ input::placeholder{
 }
 #hidden1 {
     display: none;
+    width: 400px;
+    height: 100px;
+    /* text-align: center; */
+    
 }
 #button:hover{
     background-color: blueviolet;
 }
 #hidden2 {
     display: none;
+    /* padding: 50px; */
+    /* margin: 50px; */
+    /* font: 600; */
+    width: 400PX;
+    /* height: 400PX; */
+    /* border-radius: 50PX; */
 }
 #pending{
     display:none;
+    /* padding: 50px; */
 }
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader:before , .loader:after{
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+  }
+  .loader:after {
+    box-shadow: 2px 2px 2px #FF3D00 inset;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {  transform: rotate(0)}
+    100% { transform: rotate(360deg)}
+  }
+  #main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background: none;
+    background-color: white;
+
+  }
+  h2{
+    padding: 50px;
+    margin-top: 5PX;
+  }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <h1>PHONEPE</h1>
+    <h1></h1>
     <div class="phonepe">
         <div id="img">
             <img src="https://i.cdn.newsbytesapp.com/images/l2220210316180037.jpeg" alt="" class="img1">
@@ -16,18 +16,21 @@
              <input type="number" name="fillAmount" id="inp1" placeholder="Enter Amount">
              <button id="button" type="button">Pay</button>
         </div>
-       
+       <div id="main">
         <div  id="hidden1">
-            <h2 style="background-color: rgb(6, 173, 29);color: white;">Payment Successfull Rs <span id="success"></span></h2>
+            <h2 style="background-color: rgb(30, 194, 52);;color: white">Payment Successfull <span style="background-color: rgb(30, 194, 52);color: white" id="success"></span> Rs</h2>
             
         </div>
+
         <div id="pending">
-            <h2 style="background-color: rgb(245, 242, 24);color: rgb(0, 0, 0);">Payment in Process...</h2>
+            <h2 style="background-color:yellow;color: rgb(0, 0, 0);"><span class="loader" style="background-color: yellow; color: antiquewhite;"></span>Payment in Process...  </h2>
             
         </div>
         <div id="hidden2">
             <h2 style="background-color: rgb(255, 94, 0);color: white;">Payment Failed</h2>
         </div>
+       </div>
+        
             
        
     </div>
